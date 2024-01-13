@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.example.ejerciciosubidanota.DetallesEstudianteController">
+    <center>
+        <VBox>
+           <children>
+               <Label text="Detalles del Estudiante" />
+               <Label fx:id="labelName" text="Nombre: " />
+               <Label fx:id="labelSurname" text="Apellido: " />
+               <Label fx:id="labelAddress" text="Dirección: " />
+               <Label fx:id="labelAbout" text="About: " />
+               <Label fx:id="labelPhone" text="Teléfono: " />
+               <Label fx:id="labelEmail" text="Correo: " />
+   
+               <HBox spacing="10">
+      <children>
+                      <Label text="Nota Media:" />
+                      <TextField fx:id="textFieldNotaMedia" promptText="Nota Media" />
+      </children>
+               </HBox>
+   
+               <HBox spacing="10">
+      <children>
+                      <Label text="Aprobado:" />
+                      <TextField fx:id="textFieldAprobado" promptText="Aprobado" />
+      </children>
+               </HBox>
+   
+               <Button onAction="#botoncerrar" text="Cerrar" />
+           </children>
+         <padding>
+            <Insets bottom="33.0" left="33.0" right="33.0" top="33.0" />
+         </padding>
+        </VBox>
+    </center>
+</BorderPane>
